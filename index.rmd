@@ -1,0 +1,13 @@
+---
+name: "Machine Learning with Python"
+output:
+  html_document:
+    toc: false
+    toc_float: false
+    toc_collapsed: false
+    css: "styles.css"
+    theme: journal
+    highlight: zenburn
+    code_download: false
+    number_sections: true
+---
