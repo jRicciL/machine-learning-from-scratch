@@ -1,0 +1,40 @@
+---
+title: "Decision Trees"
+output: html_document
+---
+
+```{r echo=FALSE, include=FALSE}
+library(reticulate)
+use_virtualenv('mds')
+np <- import('numpy')
+pd <- import('pandas')
+knirt::opts_chunk$set(fig.with = 15, fig.height = 5)
+```
+
+
+# Decision Tree Clasification in Pyhton
+
+- Easy to interpret both by practitioners and domain experts.
+- Can explain exactly why a specific prediction was made.
+- Require very little data preparation.
+    - They not require feature scaling or centering at all.
+
+Trees:  
+- The representation of a Classification Decision Tree is a binary tree.
+- Each node can have zero, one or two child nodes.
+- A node represents a single input variable, assuming the variable is numeric.
+- The leaf nodes of the tree contain an output variable (y), which is used to make a prediction.
+- The split with the best cost (lowest cost) is selected.
+
+For:  
+- Regression:
+    > The cost function that is minimized to choose split points is the sum squared error across all training samples that fall within the rectangle.
+- Classification:
+    > The Gini cost function is used, which provides an indication of how pure the nodes are.
+    - Node purity refers to how mixed the training data assigned to each node is. A node is pure (`gini`)
+    
+  
+```{python}
+
+```
+
