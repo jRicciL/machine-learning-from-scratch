@@ -1,6 +1,15 @@
 ---
 title: "Decision Trees"
-output: html_document
+output:
+  html_document:
+    toc: false
+    toc_float: false
+    toc_collapsed: false
+    css: "../styles.css"
+    theme: journal
+    highlight: zenburn
+    code_download: false
+    number_sections: false
 ---
 
 ```{r echo=FALSE, include=FALSE}
@@ -8,11 +17,11 @@ library(reticulate)
 use_virtualenv('mds')
 np <- import('numpy')
 pd <- import('pandas')
-knirt::opts_chunk$set(fig.with = 15, fig.height = 5)
+knitr::opts_chunk$set(fig.with = 15, fig.height = 5)
 ```
 
 
-# Decision Tree Clasification in Pyhton
+# Decision Tree Classification in Pyhton
 
 - Easy to interpret both by practitioners and domain experts.
 - Can explain exactly why a specific prediction was made.
